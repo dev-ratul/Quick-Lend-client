@@ -2,8 +2,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-primary w-full">
-      <div className="flex items-center justify-between px-10 py-16 ">
+    <div className="bg-primary relative right-[8.5vw] w-[99.4vw]  ">
+      <div className="flex w-5/6 mx-auto  items-center justify-between px-10 py-30 ">
         {/* Left side  */}
         <div className="flex-1 ">
           <p className="bg-[#DBCBB91A] p-2 text-[14px] px-4 rounded-full w-fit text-white">
