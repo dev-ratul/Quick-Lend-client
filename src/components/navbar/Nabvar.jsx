@@ -10,7 +10,7 @@ const Nabvar = () => {
         Home
       </NavLink>
       <NavLink
-       to={'/'}
+       to={'/about'}
       >
         About
       </NavLink>

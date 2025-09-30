@@ -18,7 +18,7 @@ const Banner = () => {
             with trusted lenders for faster, more transparent lending decisions
             across multiple industries.
           </p>
-          <button className="bg-[#DBCBB9] text-white  rounded-lg text-[14px]  transition">
+          <button className="bg-[#DBCBB9] text-[#282828] btn  rounded-lg text-[14px]  transition">
             Get Started as Client
           </button>
         </div>
