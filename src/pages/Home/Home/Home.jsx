@@ -5,6 +5,7 @@ import UserInformation from '../UserInformation/UserInformation';
 import OurIndustrySolutions from '../OurIndustrySolutions/OurIndustrySolutions';
 import CreditLimitTiers from '../CreditLimitTiers/CreditLimitTiers';
 import HowItWork from '../HowItWork/HowItWork';
+import GetYourCreditScore from '../GetYourCreditScore/GetYourCreditScore';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <OurIndustrySolutions></OurIndustrySolutions>
             <CreditLimitTiers></CreditLimitTiers>
             <HowItWork></HowItWork>
+            <GetYourCreditScore></GetYourCreditScore>
         </div>
     );
 };
