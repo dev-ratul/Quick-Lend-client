@@ -18,12 +18,12 @@ const Nabvar = () => {
   );
 
   return (
-    <div className="flex justify-between items-center py-4">
+    <div className="flex justify-between items-center py-4 w-5/6 mx-auto">
         {/* logo */}
       <div>
         <div>
           <img
-            className="w-30 h-20"
+            className="w-20 h-10"
             src="https://i.ibb.co.com/wNKP0J3b/3dfa84ff062a34b1f02e81da56e57a11ffdb4050.png"
             alt=""
           />
