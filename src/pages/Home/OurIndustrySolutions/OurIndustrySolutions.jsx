@@ -49,7 +49,7 @@ const industrySolutions = [
 
 const OurIndustrySolutions = () => {
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20">
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h1 className="text-4xl text-primary font-semibold">
           Our Industry Solutions
