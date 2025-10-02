@@ -1,4 +1,5 @@
 import React from "react";
+import OurCoreValues from "./OurCoreValues/OurCoreValues";
 
 const About = () => {
   const companySections = [
@@ -25,6 +26,7 @@ const About = () => {
 
   return (
     <div>
+      {/* 1st div */}
       <div className=" py-32 bg-primary text-center relative  w-[100vw] right-[8.33vw]">
         <h1 className="text-[#FFFFFF] font-bold mb-5 text-[48px]">
           Lorem ipsum dolor sit.
@@ -34,6 +36,7 @@ const About = () => {
           reprehenderit cum tenetur.
         </p>
       </div>
+      {/* 2nd div */}
       <div className=" py-[90px]">
         {companySections.map((data) => (
           <>
@@ -71,7 +74,11 @@ const About = () => {
           </>
         ))}
       </div>
-      <div></div>
+      {/* 3rd div */}
+      {/* Our core values */}
+      <div>
+        <OurCoreValues></OurCoreValues>
+      </div>
     </div>
   );
 };
