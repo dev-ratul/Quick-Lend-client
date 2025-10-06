@@ -30,7 +30,7 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 font-inter">
       <div className="bg-white shadow-xl rounded-xl p-8 md:p-12 w-full max-w-2xl">
-        <h2 className="text-3xl font-bold text-center mb-10 text-[#8A2E50]">
+        <h2 className="text-3xl font-bold text-center mb-10 text-primary">
           Create Your Account
         </h2>
 
@@ -51,7 +51,7 @@ const Register = () => {
                 id="email"
                 type="email"
                 placeholder="Enter your Email"
-                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#8A2E50] transition duration-150 ease-in-out ${
+                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary transition duration-150 ease-in-out ${
                   errors.email ? "border-red-500" : "border-gray-300"
                 }`}
                 {...register("email", {
@@ -85,7 +85,7 @@ const Register = () => {
                 id="phoneNumber"
                 type="tel"
                 placeholder="Enter your Phone Number"
-                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#8A2E50] transition duration-150 ease-in-out ${
+                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary transition duration-150 ease-in-out ${
                   errors.phoneNumber ? "border-red-500" : "border-gray-300"
                 }`}
                 {...register("phoneNumber", {
@@ -124,7 +124,7 @@ const Register = () => {
                 id="password"
                 type={passwordVisible ? "text" : "password"}
                 placeholder="Create a Password"
-                className={`w-full pl-10 pr-10 py-3 border rounded-lg focus:ring-2 focus:ring-[#8A2E50] transition duration-150 ease-in-out ${
+                className={`w-full pl-10 pr-10 py-3 border rounded-lg focus:ring-2 focus:ring-primary transition duration-150 ease-in-out ${
                   errors.password ? "border-red-500" : "border-gray-300"
                 }`}
                 {...register("password", {
@@ -138,7 +138,7 @@ const Register = () => {
               <button
                 type="button"
                 onClick={() => setPasswordVisible(!passwordVisible)}
-                className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-[#8A2E50] transition duration-150"
+                className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-primary transition duration-150"
                 aria-label={passwordVisible ? "Hide password" : "Show password"}
               >
                 {passwordVisible ? (
@@ -170,7 +170,7 @@ const Register = () => {
                 id="confirmPassword"
                 type={confirmPasswordVisible ? "text" : "password"}
                 placeholder="Confirm a Password"
-                className={`w-full pl-10 pr-10 py-3 border rounded-lg focus:ring-2 focus:ring-[#8A2E50] transition duration-150 ease-in-out ${
+                className={`w-full pl-10 pr-10 py-3 border rounded-lg focus:ring-2 focus:ring-primary transition duration-150 ease-in-out ${
                   errors.confirmPassword ? "border-red-500" : "border-gray-300"
                 }`}
                 {...register("confirmPassword", {
@@ -184,7 +184,7 @@ const Register = () => {
                 onClick={() =>
                   setConfirmPasswordVisible(!confirmPasswordVisible)
                 }
-                className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-[#8A2E50] transition duration-150"
+                className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-primary transition duration-150"
                 aria-label={
                   confirmPasswordVisible ? "Hide password" : "Show password"
                 }
@@ -207,7 +207,7 @@ const Register = () => {
             <input
               id="terms"
               type="checkbox"
-              className="h-4 w-4 text-[#8A2E50] border-gray-300 rounded focus:ring-[#8A2E50] mt-1"
+              className="h-4 w-4 cursor-pointer text-primary border-gray-300 rounded focus:ring-primary mt-1"
               {...register("terms", {
                 required: "You must agree to the terms",
               })}
@@ -216,14 +216,14 @@ const Register = () => {
               I agree to the
               <a
                 href="#"
-                className="font-medium text-[#8A2E50] hover:text-[#722641] ml-1"
+                className="font-medium text-primary hover:text-[#722641] ml-1"
               >
                 Privacy Policy
               </a>
               <span className="mx-1">and</span>
               <a
                 href="#"
-                className="font-medium text-[#8A2E50] hover:text-[#722641]"
+                className="font-medium text-primary hover:text-[#722641]"
               >
                 Terms of service
               </a>
@@ -235,7 +235,7 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-medium text-white bg-[#8A2E50] hover:bg-[#722641] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#8A2E50] transition duration-200 mt-8"
+            className="w-full cursor-pointer flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-medium text-white bg-primary hover:bg-[#722641] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-200 mt-8"
           >
             Sign Up
           </button>
@@ -245,7 +245,7 @@ const Register = () => {
           Already Have Account?
           <a
             href="#"
-            className="font-bold text-[#8A2E50] hover:text-[#722641] transition duration-150 ml-1"
+            className="font-bold text-primary hover:text-[#722641] transition duration-150 ml-1"
           >
             Sign In Here
           </a>
@@ -256,3 +256,4 @@ const Register = () => {
 };
 
 export default Register;
+// 
